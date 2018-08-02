@@ -10,4 +10,13 @@ class ApplicationController < ActionController::Base
             devise_parameter_sanitizer.permit(:account_update , keys:[:firstname, :email, :password , :current_password,:lastname,:phonenumber,:job,:gender,:age,:reference_note])
         end
 
+        def after_sign_in_path_for(resource)
+        	if current_admin
+				admins_dashboard_path|| root_path
+      		else
+			 root_path
+    		end
+
+      	end
+
 end

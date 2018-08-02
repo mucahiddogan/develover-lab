@@ -1,0 +1,21 @@
+<h1>ADMIN PANELİ</h1>
+<table>
+	<tr>
+		<th>Email</th>
+		<th>Firstname</th>
+		<th></th>
+	</tr>
+
+<% @users.each do |user| %>
+
+	<tr>
+		<td><%= user.email %></td>
+		 <td><%= user.firstname %></td>
+		
+	</tr>
+<% end %>
+</table>
+
+<h1>kullanıcı sayısı: <%= @users.count %></h1>
+
+#to do : aktif kullanıcıları listelemek

@@ -5,4 +5,9 @@ class AdminsController < ApplicationController
 		@users=User.all
 
 	end
+	def delete
+		@user = User.find(params[:id])
+		@user.delete
+		redirect_to admins_dashboard_path
+	end
 end

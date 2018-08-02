@@ -33,9 +33,10 @@ Mekanı her yönüyle tanıtan bir bölüm olacak(konum,tel vs.). Üye girişi v
 
 **Kullanılacak Teknolojiler**
 
-  - Web framworkü olan Ruby on Rails kullanılacaktır.
-  - Database için postgresql kullanılacaktır.
+  - Web framworkü olan Ruby on Rails
+  - Database için postgresql
   - Deployment için heroku 
+  - Bootstrap
   
 
 

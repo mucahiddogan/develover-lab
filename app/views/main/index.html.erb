@@ -1,6 +1,8 @@
 
 <% if user_signed_in? %>
 <%= render 'navbar_user' %>
+<% elsif admin_signed_in? %>
+<%= render 'navbar_admin' %>
 <% else %>
 <%= render 'navbar_main' %>
 <% end %>

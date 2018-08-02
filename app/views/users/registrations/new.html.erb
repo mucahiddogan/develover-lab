@@ -20,6 +20,35 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
+    <div class="field">
+    <%= f.label :firstname %><br />
+    <%= f.text_field :firstname, autocomplete: "off" %>
+  </div>
+    <div class="field">
+    <%= f.label :lastname %><br />
+    <%= f.text_field :lastname, autocomplete: "off" %>
+  </div>
+    <div class="field">
+    <%= f.label :phonenumber %><br />
+    <%= f.text_field :phonenumber, autocomplete: "off" %>
+  </div>
+    <div class="field">
+    <%= f.label :job %><br />
+    <%= f.text_field :job, autocomplete: "off" %>
+  </div>
+    <div class="field">
+    <%= f.label :gender %><br />
+    <%= f.text_field :gender, autocomplete: "off" %>
+  </div>
+    <div class="field">
+    <%= f.label :age %><br />
+    <%= f.text_field :age, autocomplete: "off" %>
+  </div>
+    <div class="field">
+    <%= f.label :reference_note %><br />
+    <%= f.text_field :reference_note, autocomplete: "off" %>
+  </div>
+  
 
   <div class="actions">
     <%= f.submit "Sign up" %>

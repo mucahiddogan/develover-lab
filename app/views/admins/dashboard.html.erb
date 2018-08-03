@@ -1,9 +1,9 @@
 <%= render 'navbar_dashboard' %>
-<body style="background-color: #212529">
+<body style="background-color: white">
 	
-<h4 style="color: white">Number of User : <%= @users.count %></h1>
+<h4 style="color: white">Registered Users: <%= @users.count %></h1>
 <div class="bd-example">
-  <table class="table table-dark">
+  <table class="table table-light ">
     <thead>
       <tr>
 		<th scope="col">Email</th>
@@ -24,17 +24,16 @@
     <% @users.each do |user| %>
 
       <tr class="table-active">
-		<td class="bg-primary"><%= user.email %></td>
-		<td><%= user.firstname %></td>
-		<td class="bg-success"><%= user.lastname %></td>
-		<td><%= user.phonenumber %></td>
-		<td class="bg-danger">s<%= user.job %></td>
-		<td><%= user.gender %></td>
-		<td class="bg-info"><%= user.age %></td>
-		<td><%= user.reference_note %></td>
-		<td class="bg-warning"><%= user.last_sign_in_at %></td>
-		<td class="bg-danger"><%= link_to "Destroy", deleteuser_url(user),:data => {:confirm => 'Are you sure?'} %></td>
-   
+			<td class="bg-primary"><%= user.email %></td>
+			<td><%= user.firstname %></td>
+			<td class="bg-success"><%= user.lastname %></td>
+			<td><%= user.phonenumber %></td>
+			<td class="bg-danger">s<%= user.job %></td>
+			<td><%= user.gender %></td>
+			<td class="bg-info"><%= user.age %></td>
+			<td><%= user.reference_note %></td>
+			<td class="bg-warning"><%= user.last_sign_in_at %></td>
+			<td class="bg-danger"><%= link_to "Delete User", deleteuser_url(user), data: { confirm: "Are you sure?" } %></td>
 	  </tr>
     
     <% end %>

@@ -6,6 +6,7 @@
   <table class="table table-light ">
     <thead>
       <tr>
+			<th scope="col">CardNumbeer</th>
 		<th scope="col">Email</th>
 		<th scope="col">Firstname</th>
 		<th scope="col">Lastname</th>
@@ -24,6 +25,9 @@
     <% @users.each do |user| %>
 
       <tr class="table-active">
+						<%user.card_number = user.id + 10000000%>
+						<td><%= user.card_number %></td>
+
 			<td class="bg-primary"><%= user.email %></td>
 			<td><%= user.firstname %></td>
 			<td class="bg-success"><%= user.lastname %></td>

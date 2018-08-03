@@ -13,7 +13,9 @@ class ApplicationController < ActionController::Base
         def after_sign_in_path_for(resource)
         	if current_admin
 				admins_dashboard_path|| root_path
-      		else
+            elsif current_partner
+                partner_path|| root_path
+            else
 			 root_path
     		end
 

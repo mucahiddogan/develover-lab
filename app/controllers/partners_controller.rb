@@ -7,8 +7,10 @@ class PartnersController < ApplicationController
 	end
 	def vote_inc
 		@user = User.find(params[:id])
-		@user.votes+=1
-		@user.save
+		@user.liked_by current_partner
+		p "----------"
+		p @user.votes_for.size
+
 		status(@user)
 
 		redirect_to partner_path
@@ -16,12 +18,24 @@ class PartnersController < ApplicationController
 
 	def status(user)
 		@partners = Partner.all
-		total = user.votes
+		total = user.votes_for.size
 		if (total > (@partners.count + 1)/2)
 			user.status = true
 			user.card_number= user.id + 1000000
 			user.save
 		end
 	end
+
+	def vote_dec
+		@user = User.find(params[:id])
+		@user.unliked_by current_partner
+		p "----------"
+		p @user.votes_for.size
+
+		status(@user)
+
+		redirect_to partner_path
+	end
+
 
 end

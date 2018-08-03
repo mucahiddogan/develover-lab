@@ -44,10 +44,11 @@
 				<td class="bg-info"><%= user.referance_id %></td>
 				<td class="bg-info"><%= user.status %></td>
 				<td class="bg-info"><%= user.online %></td>
-				<td class="bg-info"><%= user.votes %>/<%= @partners.count + 1 %>
+				<td class="bg-info"><%= user.votes_for.size %>/<%= @partners.count + 1 %>
 				</td>
 				<td class="bg-danger">
-				<%= link_to 'YES', vote_inc_path(user)%>
+				<%= link_to 'YES', vote_inc_path(user)%>|
+				<%= link_to 'NO', vote_dec_path(user)%>
 				
 				</td>
 			<%end %>

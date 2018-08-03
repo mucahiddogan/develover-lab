@@ -7,8 +7,9 @@ class AdminsController < ApplicationController
 
 	def delete
 		@user = User.find(params[:id])
-		@user.delete
-		redirect_to admins_dashboard_path
+		if @user.delete	 
+			redirect_to admins_dashboard_path, notice: "user deleted"
+		end
 	end
 
 end

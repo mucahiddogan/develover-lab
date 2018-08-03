@@ -33,7 +33,7 @@
 		<td class="bg-info"><%= user.age %></td>
 		<td><%= user.reference_note %></td>
 		<td class="bg-warning"><%= user.last_sign_in_at %></td>
-		<td class="bg-danger"><%= link_to "Label", deleteuser_url(user) %></td>
+		<td class="bg-danger"><%= link_to "Destroy", deleteuser_url(user),:data => {:confirm => 'Are you sure?'} %></td>
    
 	  </tr>
     

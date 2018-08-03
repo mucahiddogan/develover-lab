@@ -1,0 +1,59 @@
+<h1>Paydaş Dashboard</h1>
+
+	
+<h4 style="color: white">Number of User : <%= @users.count %></h1>
+<div class="bd-example">
+  <table class="table table-dark">
+    <thead>
+      <tr>
+		<th scope="col">Email</th>
+		<th scope="col">Firstname</th>
+		<th scope="col">Lastname</th>
+		<th scope="col">Phone Number</th>
+		<th scope="col">Job</th>
+		<th scope="col">Gender</th>
+		<th scope="col">Age</th>
+		<th scope="col">Reference</th>
+		<th scope="col">Last Sign</th>
+		<th scope="col">Reference From</th>
+		<th scope="col">Reference Id</th>
+		<th scope="col">Status</th>
+		<th scope="col">Votes</th>
+		<th scope="col">Online</th>
+		<th scope="col">Vote User </th>
+
+      </tr>
+    </thead>
+    <tbody>
+    
+    <% @users.each do |user| %>
+
+      <tr class="table-active">
+		<td class="bg-primary"><%= user.email %></td>
+		<td><%= user.firstname %></td>
+		<td class="bg-success"><%= user.lastname %></td>
+		<td><%= user.phonenumber %></td>
+		<td class="bg-danger">s<%= user.job %></td>
+		<td><%= user.gender %></td>
+		<td class="bg-info"><%= user.age %></td>
+		<td><%= user.reference_note %></td>
+		<td class="bg-warning"><%= user.last_sign_in_at %></td>
+		<td class="bg-info"><%= user.reference_code %></td>
+		<td class="bg-info"><%= user.referance_id %></td>
+		<td class="bg-info"><%= user.status %></td>
+		<td class="bg-info"><%= user.votes %></td>
+		<td class="bg-info"><%= user.online %></td>
+		<td class="bg-danger">YES/NO</td>
+
+
+   
+	  </tr>
+    
+    <% end %>
+
+    </tbody>
+  </table>
+</div>
+
+
+</body><%# link_to "Destroy", admin_destroy_user_path(user), method: :delete, data: { confirm: "You sure?" } %>

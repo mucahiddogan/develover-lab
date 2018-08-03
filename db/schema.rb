@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_03_082546) do
+ActiveRecord::Schema.define(version: 2018_08_03_084423) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -68,9 +68,9 @@ ActiveRecord::Schema.define(version: 2018_08_03_082546) do
     t.text "reference_note"
     t.string "reference_code"
     t.string "referance_id"
-    t.boolean "status"
     t.integer "votes"
-    t.boolean "online"
+    t.boolean "status", default: false
+    t.boolean "online", default: false
     t.integer "card_number"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true

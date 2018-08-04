@@ -1,0 +1,50 @@
+<div class="table-responsive" style="margin-top:30px;">
+  <table class="table table-striped table-sm" >
+    <thead>
+      <tr>
+		<th scope="col">CardNumbeer</th>
+		<th scope="col">Email</th>
+		<th scope="col">Firstname</th>
+		<th scope="col">Lastname</th>
+		<th scope="col">Phone Number</th>
+		<th scope="col">Job</th>
+		<th scope="col">Gender</th>
+		<th scope="col">Age</th>
+		<th scope="col">Reference</th>
+		<th scope="col">Created at</th>
+		<th scope="col">Votes</th>
+		<th scope="col">Vote </th>
+
+      </tr>
+    </thead>
+    <tbody>
+    
+    <% @users.each do |user| %>
+
+		<% if !user.status %>
+
+      <tr class="table-active">
+			<td><%= user.card_number %></td>
+			<td ><%= user.email %></td>
+			<td><%= user.firstname %></td>
+			<td ><%= user.lastname %></td>
+			<td><%= user.phonenumber %></td>
+			<td ><%= user.job %></td>
+			<td><%= user.gender %></td>
+			<td ><%= user.age %></td>
+			<td><%= user.reference_note %></td>
+			<td ><%= user.created_at %></td>
+			<td ><%= user.votes_for.size %>/<%= @partners.count + 1 %></td>
+			<td >
+				<%= link_to 'YES', admin_inc_path(user)%>|
+				<%= link_to 'NO', admin_dec_path(user)%>
+			</td>	  
+			
+			</tr>
+    <% end %>
+    <% end %>
+
+    </tbody>
+  </table>
+</div>
+

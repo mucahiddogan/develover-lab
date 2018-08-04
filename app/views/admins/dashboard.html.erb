@@ -1,12 +1,9 @@
-
 <%= render 'navbar_dashboard' %>
 
 <body style="background-color: white ">
     <div class="container-fluid">
         <div class="row">
-
             <%= render 'menu_dashboard'  %>
-            
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
             <div style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;" class="chartjs-size-monitor">
             <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
@@ -18,11 +15,7 @@
             </div>
             </div>
         </div>		
-
-
-
 		<%= render 'statistics' %>
-
         <button type="button" class="btn btn-primary btn-lg"> Number of Users:<%= @users.count%> </button><br><br>
         <button type="button" class="btn btn-danger btn-lg"> Number of Partners:<%= @partners.count%></button><br><br>
         <button type="button" class="btn btn-secondary btn-lg"> Last Users:</button>

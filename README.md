@@ -7,7 +7,7 @@
 --------------------
 **Özet**
 
-İnsanların aktif ve verimli çalışabilmeleri için oluşturulmuş ortamın tanıtılacağı ve bu ortama üye olmaları, güvenli giriş yababilmeleri için oluşturulacak ilk etapta 1000 kişi kapasiteli bir web sitesi.
+İnsanların aktif ve verimli çalışabilmeleri için oluşturulmuş ortak çalışma merkezinin tanıtılacağı, bu ortama üye olmaları ve güvenli giriş yababilmeleri için oluşturulacak, ilk etapta 1000 kişi kapasiteli projenin web uygulaması.
 
  **Tasarımın Ne şekilde yapılacağı**
  

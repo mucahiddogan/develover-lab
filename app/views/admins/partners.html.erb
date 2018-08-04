@@ -19,20 +19,11 @@
             </div>
         </div>		
 
+    <%= render 'partners_list'%>
 
 
-		<%= render 'statistics' %>
 
-        <button type="button" class="btn btn-primary btn-lg"> Number of Users:<%= @users.count%> </button><br><br>
-        <button type="button" class="btn btn-danger btn-lg"> Number of Partners:<%= @partners.count%></button><br><br>
-        <button type="button" class="btn btn-secondary btn-lg"> Last Users:</button>
-        <button type="button" class="btn btn-secondary btn-md"> 
-        <%@users.order(created_at: :desc).limit(5).each do |user| %>
-        <%= user.id %>-<%= user.email %>
-        <% end %>
-        </button>
-        
-        
+
 	</div>	
 
 </body>

@@ -1,4 +1,4 @@
-# develover-team
+# develover-lab
 
 ![logo](logo.png)
 
@@ -39,4 +39,13 @@ Mekanı her yönüyle tanıtan bir bölüm olacak(konum,tel vs.). Üye girişi v
   - Bootstrap
   
 
+  ## :octocat: Contributors
 
+* [Mücahid Doğan](https://github.com/mucahiddogan)
+* [Muzaffer Kadir Yılmaz](https://github.com/muzafferkadir)
+* [Müberra Bülbül](https://github.com/muberra97)
+* [Nafi Durmuş](https://github.com/nafidurmus)
+
+
+
+  ##  :hash: #oyk2018

@@ -58,7 +58,7 @@ class AdminsController < ApplicationController
 		total = user.votes_for.size
 		if (total > (@partners.count + 1)/2)
 			user.status = true
-			user.card_number= user.id + 1000000
+			user.card_number = user.id + 1000000
 			user.save
 		end
 

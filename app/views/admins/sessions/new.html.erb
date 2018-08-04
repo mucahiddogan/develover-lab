@@ -1,7 +1,6 @@
 <center>
   <%= render 'main/navbar_default' %>
   <h2>Log in</h2>
-  <p>If you aren't able to get admin authorizations <%= link_to 'Sign Up', new_admin_registration_path %> </p>
     
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>

@@ -1,4 +1,8 @@
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
+</head>
 <% if user_signed_in? %>
 <%= render 'navbar_user' %>
 <% elsif admin_signed_in? %>
@@ -9,19 +13,17 @@
 <%= render 'navbar_main' %>
 <% end %>
 
-
-<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-	<div class="col-md-5 p-lg-5 mx-auto my-5">
-		<h1 class="display-4 font-weight-normal">develover team</h1>
-        <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
-        <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light image">
+        <div class="col-md-5 p-lg-5 mx-auto my-5 transbox">
+            <div class="norma">
+            <h1 class="display-4 font-weight-normal ">Develover Lab</h1>
+            <p class="lead font-weight-normal ">Develover lab, Yazılım geliştiricilerine ortak çalışma alanları sağlayan, etkinlik düzenleme amaçlı konferans ve workshop salonları bulunan Türkiye'nin Silikon Vadisidir.</p>
+            </div>
+            </div>
+        </div>
+            <div class="product-device box-shadow d-none d-md-block"></div>
+        <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
     </div>
-      <div class="product-device box-shadow d-none d-md-block"></div>
-    <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
-</div>
-
 
 <%= render 'map' %>
-
-
 <%= render 'footbar' %>

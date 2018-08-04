@@ -1,3 +1,103 @@
-// Place all the styles related to the Main controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+   //background-image: url("http://www.wherelovegrows.org/wp-content/uploads/2014/01/1920x1080-light-blue-solid-color-background.jpg");
+   //background-image: url("https://ak8.picdn.net/shutterstock/videos/24223858/thumb/1.jpg");
+   background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+   height: 900px;
+   background-repeat: no-repeat;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+.norma {
+  opacity: 2.0;
+  margin-right: 240px;
+  margin-top: -50px;
+  margin-left: -40px;
+}
+
+div.image {
+   background-position: center;
+   background-repeat: no-repeat;
+
+   background-image: url("http://ogrencikariyeri.com/haber/wp-content/uploads/2018/03/1111-1-790x445.jpg");
+
+}
+
+a.navbar.brand {
+   font-size: 10px;
+   font-style: oblique;
+}
+
+
+ h1.display-4 {
+    color: black;
+ }
+
+div.transbox {
+  padding: 500px;
+}
+
+ .fa {
+  padding: 9px;
+  font-size: 100px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+  margin-top: 10px;
+}
+
+.fa-twitter {
+  background: black;
+  color: white;
+  border-radius: 48%; 
+}
+
+.fa-facebook {
+  background: black;
+  color: white;
+  border-radius: 48%; 
+}
+
+.fa-instagram {
+  background: black;
+  color: white;
+  border-radius: 48%; 
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+.sociall {
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.darker{
+  font-size: 20px;
+  font-style: oblique;
+  background-color: black;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: -15px;
+  cursor: pointer;
+  border-style: solid;
+  border: 1px;
+  border-color: green;
+
+}
+
+br.mybr {
+  display: block;
+  margin: 70px;
+}
+
+h5.card-title {
+  color: darkblue;
+}

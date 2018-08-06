@@ -1,0 +1,20 @@
+<center>This is your QR code</center>
+<div class="card" style="width: 100rem height 100rem;">
+  <div class="card-body">
+    <center>
+      <table class="qr">
+        <% @qr.modules.each_index do |x| %>
+            <tr>
+              <% @qr.modules.each_index do |y| %>
+                  <% if @qr.dark?(x,y) %>
+                      <td class="black"/>
+                  <% else %>
+                      <td class="white"/>
+                  <% end %>
+              <% end %>
+            </tr>
+        <% end %>
+      </table>
+    </center>
+  </div>
+</div>

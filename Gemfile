@@ -20,6 +20,9 @@ gem 'devise'
 gem 'acts_as_votable', '~> 0.11.1'
 gem 'bootstrap-social-rails'
 
+gem 'active_model_otp'
+gem 'rqrcode'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end

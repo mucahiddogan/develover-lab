@@ -1,8 +1,7 @@
 <%= render 'navbar_dashboard' %>
-	
 <h4 style="color: white">Number of User : <%= @users.count %></h1>
 <div class="bd-example">
-  <table class="table table-dark">
+  <table class="table table-striped table-sm">
     <thead>
       <tr>
 		<th scope="col">Card Number</th>
@@ -28,22 +27,22 @@
     
     <% @users.each do |user| %>
 			<%if !user.status %>
-					<tr class="table-active">
-				<td class="bg-info"><%= user.card_number %></td>
-				<td class="bg-primary"><%= user.email %></td>
+				<tr class="table-active">
+				<td><%= user.card_number %></td>
+				<td><%= user.email %></td>
 				<td><%= user.firstname %></td>
-				<td class="bg-success"><%= user.lastname %></td>
+				<td><%= user.lastname %></td>
 				<td><%= user.phonenumber %></td>
-				<td class="bg-danger">s<%= user.job %></td>
+				<td><%= user.job %></td>
 				<td><%= user.gender %></td>
-				<td class="bg-info"><%= user.age %></td>
+				<td><%= user.age %></td>
 				<td><%= user.reference_note %></td>
-				<td class="bg-warning"><%= user.last_sign_in_at %></td>
-				<td class="bg-info"><%= user.reference_code %></td>
-				<td class="bg-info"><%= user.referance_id %></td>
-				<td class="bg-info"><%= user.status %></td>
-				<td class="bg-info"><%= user.online %></td>
-				<td class="bg-info"><%= user.votes_for.size %>/<%= @partners.count + 1 %>
+				<td><%= user.last_sign_in_at %></td>
+				<td><%= user.reference_code %></td>
+				<td><%= user.referance_id %></td>
+				<td><%= user.status %></td>
+				<td><%= user.online %></td>
+				<td><%= user.votes_for.size %>/<%= @partners.count + 1 %>
 				</td>
 				<td class="bg-danger">
 				<%= link_to 'YES', vote_inc_path(user)%>|

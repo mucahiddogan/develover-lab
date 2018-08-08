@@ -21,11 +21,9 @@
 		<th scope="col">Online</th>
 		<th scope="col">Votes</th>
 		<th scope="col">Vote User </th>
-
-      </tr>
+   </tr>
     </thead>
     <tbody>
-    
     <% @users.each do |user| %>
 			<%if !user.status %>
 					<tr class="table-active">
@@ -50,9 +48,7 @@
 				<%= link_to 'NO', vote_dec_path(user)%>
 				
 				</td>
-			<%end %>
-
-   
+			<%end %>   
 	  </tr>
     
     <% end %>

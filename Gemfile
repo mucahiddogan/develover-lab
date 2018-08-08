@@ -13,12 +13,12 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
-#Added gems
 gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
 gem 'devise'
 gem 'acts_as_votable', '~> 0.11.1'
 gem 'bootstrap-social-rails'
+gem 'github-linguist', '~> 4.7', '>= 4.7.4'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
